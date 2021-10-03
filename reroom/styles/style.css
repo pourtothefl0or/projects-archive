@@ -1,0 +1,891 @@
+/* Отступы на изображениях: 20px */
+/* Нижние отступы на блоках контента: 100px */
+
+/* START */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, input{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* Боковой Отступ для всех */
+.container{
+	margin: 0 20px;
+}
+
+
+/* Нижние отступы */
+.newarrivals--b1,
+.sale--b6{
+    margin-bottom: 20px;
+}
+
+.catalog--b2,
+.chooseus--b3,
+.style--b4,
+.galleryproduct--b5,
+.newcollection--b7,
+.discounts--b8{
+    margin-bottom: 100px;
+}
+
+
+/* Кнопка */
+#btn:hover{
+    background: #000;
+    color: #fff;
+    padding: 10px 20px 10px 10px;
+    transition: .5s;
+}
+
+#btn:hover span{
+    color: #000;
+}
+
+
+/* Шапка START */
+header{
+    margin: 20px 0;
+}
+
+/* Шапка (Боковой Отступ) */
+header .container{
+    margin: 0;
+}
+
+.header__contentbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.header__contentbox a{
+    margin: 0 25px;
+    padding: 10px;
+}
+
+.header__logo img, #menu img{
+    max-width: 280px;
+}
+
+/* HOVER для всех, кроме логотипа */
+.header__contentbox a:nth-child(-n+2):hover{
+    background: #000;
+    color: #fff;
+    transition: .5s;
+}
+
+.header__contentbox a:nth-child(n+4):hover{
+    background: #000;
+    color: #fff;
+    transition: .5s;
+}
+
+/* Меню */
+#menu{
+    display: none;
+    padding: 10px;
+}
+/* Шапка END */
+
+
+/* Блок 1 START */
+.newarrivals--b1 .container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.newarrivals.contentbox.img{
+    height: 75vh;
+}
+
+.newarrivals.contentbox.items{
+    padding: 240px 20px 0px;
+    opacity: 0;
+}
+
+.newarrivals.contentbox.items h1{
+    margin-bottom: 25px;
+    line-height: 1em;
+}
+
+.newarrivals.contentbox.items p{
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.newarrivals.contentbox.items a{
+    border: 0;
+    background: none;
+    font-size: 14px;
+}
+
+.newarrivals.contentbox:hover .newarrivals.contentbox.items{
+    transition: .5s;
+    opacity: 1;
+}
+
+/* Блок 1 > Изображения */
+#na_cb_1{
+    background: url(../images/block1/1.png) center no-repeat;
+    background-size: cover;
+}
+
+#na_cb_2{
+    background: url(../images/block1/2.png) center no-repeat;
+    background-size: cover;
+}
+
+#na_cb_3{
+    background: url(../images/block1/3.png) center no-repeat;
+    background-size: cover;
+}
+/* Блок 1 END */
+
+
+/* Блок 2 START */
+
+
+.catalog--b2 .container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 20px;
+}
+
+.catalog.contentbox.img{
+    width: 100%;
+    height: 45vh;
+}
+
+.catalog.contentbox p{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 35px;
+    letter-spacing: 0.1em;
+}
+
+.catalog.contentbox.line{
+    background: #000;
+    width: 0px;
+    height: 2px;
+    margin-top: 15px;
+    transition-property: width;
+	transition-duration: 2s;
+}
+
+.catalog.contentbox a:hover .catalog.contentbox.line{
+    width: 100%;
+}
+
+/* Блок 2 > Изображения */
+#c_cb_1 .catalog.contentbox.img{
+    background: url(../images/block2/1.png) center no-repeat;
+    background-size: cover;
+}
+
+#c_cb_2 .catalog.contentbox.img{
+    background: url(../images/block2/2.png) center no-repeat;
+    background-size: cover;
+}
+
+#c_cb_3 .catalog.contentbox.img{
+    background: url(../images/block2/3.png) center no-repeat;
+    background-size: cover;
+}
+
+#c_cb_4 .catalog.contentbox.img{
+    background: url(../images/block2/4.png) center no-repeat;
+    background-size: cover;
+}
+
+#c_cb_5 .catalog.contentbox.img{
+    background: url(../images/block2/5.png) center no-repeat;
+    background-size: cover;
+}
+/* Блок 2 END */
+
+
+/* Блок 3 START */
+.chooseus--b3 h1{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+}
+
+.chooseus--b3 .container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    margin: 0 15%;
+}
+
+/* Блок 3 > Карточка */
+.chooseus.contentbox{
+    text-align: center;
+}
+
+.chooseus.contentbox h1{
+    font-size: 170px;
+}
+
+.chooseus.contentbox p{
+    line-height: 1.6em;
+    font-size: 0px;
+    transition-property: font-size;
+    transition-duration: .5s;
+}
+
+/* Блок 3 > Карточка > Анимация */
+#cu_cb_1:hover #cu_cb_p1,
+#cu_cb_2:hover #cu_cb_p2,
+#cu_cb_3:hover #cu_cb_p3,
+#cu_cb_4:hover #cu_cb_p4{
+    font-size: 14px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+/* Блок 3 END */
+
+
+/* Блок 4 START */
+.style--b4 .container{
+    margin: 0 18%;
+    display: flex;
+}
+
+.style.contentbox.left{
+    width: 50%;
+}
+
+.style.contentbox.left h1{
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 35px;
+    line-height: 1.2em;
+}
+.style.contentbox.left p{
+    font-weight: 300;
+    line-height: 1.6em;
+    margin: 0 20px 30px 0;
+}
+
+.style.contentbox.right{
+    width: 50%;
+    background: url(../images/block4/1.png) center no-repeat;
+    background-size: cover;
+}
+/* Блок 4 END */
+
+
+/* Блок 5 START */
+.galleryproduct--b5{
+    text-align: center;
+}
+
+.galleryproduct--b5 h1{
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.galleryproduct--b5 .container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    margin: 0 18%;
+}
+
+.galleryproduct.contentbox.img{
+    width: 100%;
+    height: 27vh;
+}
+
+.galleryproduct.contentbox p{
+    text-align: center;
+    margin-top: 25px;
+    color: #383838;
+    font-size: 14px;
+}
+
+.galleryproduct.contentbox:hover p{
+    color: #bdbdbd;
+    transition: .5s;
+}
+
+.galleryproduct.contentbox.img.choose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.galleryproduct.contentbox.img.choose p{
+    color: #000;
+}
+
+.galleryproduct.contentbox:hover .galleryproduct.contentbox.img.choose{
+    opacity: 1;
+    transition: .5s;
+    background: #bdbdbdb0;
+}
+
+/* Блок 5 > Изображения */
+#gp_cb_1{
+    background: url(../images/block5/1.png) center no-repeat;
+    background-size: cover;
+}
+
+#gp_cb_2{
+    background: url(../images/block5/2.png) center no-repeat;
+    background-size: cover;
+}
+
+#gp_cb_3{
+    background: url(../images/block5/3.png) center no-repeat;
+    background-size: cover;
+}
+
+#gp_cb_4{
+    background: url(../images/block5/4.png) center no-repeat;
+    background-size: cover;
+}
+/* Блок 5 END */
+
+
+/* Блок 6 START */
+.sale--b6 .container{
+    display: grid;
+    grid-gap: 20px;
+    margin: 0 18%;
+}
+
+
+.sale.contentbox.img{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.sale.contentbox.inf{
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.sale.contentbox.inf h1{
+    margin-bottom: 25px;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+}
+
+.sale.contentbox.inf:hover{
+    background: #000;
+    color: #fff;
+    transition: .5s;
+}
+
+/* Блок 6 > Гриды + Изображения */
+#s_cb_1 .sale.contentbox.img,
+#s_cb_2 .sale.contentbox.img{
+    height: 56vh;
+}
+
+#s_cb_3 .sale.contentbox.img,
+#s_cb_4 .sale.contentbox.img{
+    height: 27vh;
+}
+
+#s_cb_1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+#s_cb_1 .sale.contentbox.img{
+    background: url(../images/block6/1.png) center no-repeat;
+    background-size: cover;
+}
+
+#s_cb_2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+#s_cb_2 .sale.contentbox.img{
+    background: url(../images/block6/2.png) center no-repeat;
+    background-size: cover;
+}
+
+#s_cb_3{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+#s_cb_3 .sale.contentbox.img{
+    background: url(../images/block6/3.png) center no-repeat;
+    background-size: cover;
+}
+
+#s_cb_4{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#s_cb_4 .sale.contentbox.img{
+    background: url(../images/block6/4.png) center no-repeat;
+    background-size: cover;
+    height: 27vh;
+}
+/* Блок 6 END */
+
+
+/* Блок 7 START */
+.newcollection--b7 .container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    margin: 0 18%;
+}
+
+.newcollection.contentbox.img{
+    height: 70vh;
+}
+
+.newcollection.contentbox.items{
+    padding: 20px;
+    opacity: 0;
+}
+
+.newcollection.contentbox.items h1{
+    margin-bottom: 25px;
+    line-height: 1em;
+}
+
+.newcollection.contentbox.items p{
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.newcollection.contentbox.items a{
+    border: 0;
+    background: none;
+    font-size: 14px;
+}
+
+#nc_cb_2:hover .newcollection.contentbox.items{
+    margin-bottom: 10px;
+}
+
+.newcollection.contentbox:hover .newcollection.contentbox.items{
+    transition: .5s;
+    opacity: 1;
+}
+
+#nc_cb_2 .newcollection.contentbox.img{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* Блок 6 > Изображения */
+#nc_cb_1 .newcollection.contentbox.img{
+    background: url(../images/block7/1.png) center no-repeat;
+    background-size: cover;
+}
+
+#nc_cb_2 .newcollection.contentbox.img{
+    background: url(../images/block7/2.png) center no-repeat;
+    background-size: cover;
+}
+/* Блок 7 END */
+
+
+/* Блок 8 START */
+.discounts--b8{
+    text-align: center;
+}
+
+.discounts--b8 h1{
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.discounts--b8 .container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    margin: 0 18%;
+}
+
+.discounts.contentbox.img{
+    width: 100%;
+    height: 270px;
+}
+
+.discounts.contentbox p{
+    text-align: center;
+    margin-top: 25px;
+    color: #383838;
+    font-size: 14px;
+}
+
+.discounts.contentbox:hover p{
+    color: #bdbdbd;
+    transition: .5s;
+}
+
+.discounts.contentbox.img.choose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.discounts.contentbox.img.choose p{
+    color: #000;
+}
+
+#line-through{
+    text-decoration: line-through;
+}
+
+.discounts.contentbox:hover .discounts.contentbox.img.choose{
+    opacity: 1;
+    transition: .5s;
+    background: #bdbdbdb0;
+}
+
+/* Блок 8 > Изображения */
+#d_cb_1{
+    background: url(../images/block8/1.png) center;
+    background-size: cover;
+}
+
+#d_cb_2{
+    background: url(../images/block8/2.png) center;
+    background-size: cover;
+}
+
+#d_cb_3{
+    background: url(../images/block8/3.png) center;
+    background-size: cover;
+}
+
+#d_cb_4{
+    background: url(../images/block8/4.png) center;
+    background-size: cover;
+}
+/* Блок 8 END */
+
+
+/* Блок 9 START */
+.form--b9 .container{
+    padding: 70px 0;
+    background: #efefef;
+}
+
+.form--b9 .container .container{
+    padding: 0;
+    margin: 0 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form.contentbox.left h4{
+    margin-bottom: 15px;
+}
+
+.form.contentbox.left{
+    width: 40%;
+}
+
+/* Блок 9 > Форма обратной связи */
+input[type="email"]{
+    outline: none;
+    border: 1px solid #d3d7d9;
+    background: #efefef;
+    padding: 4px;
+    width: 25vw;
+}
+
+input[type="submit"]{
+    outline: none;
+    border: 1px solid #d3d7d9;
+    background: #efefef;
+    padding: 4px;
+    height: 26px;
+    margin-left: -6px;
+}
+
+input[type="submit"]:hover{
+    background: #d3d7d9;
+}
+
+input[type="email"]:invalid{
+    color: red;
+}
+/* Блок 9 END */
+
+
+/* Подвал */
+footer{
+    padding: 20px 0;
+}
+
+footer p{
+    text-align: center;
+}
+/* Подвал END */
+
+
+/* Медиазапросы */
+@media screen and (max-width: 1500px){
+    .chooseus--b3 .container{
+        grid-template-columns: auto auto;
+    }
+
+    #cu_cb_3,
+    #cu_cb_4{
+        grid-row: 2 / 3;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .newarrivals--b1 .container{
+        grid-template-columns: auto auto;
+    }
+
+    .newarrivals.contentbox.img {
+        height: 40vh;
+    }
+
+    .newarrivals.contentbox.items{
+        padding: 20px 20px 0;
+    }
+
+    #na_cb_3{
+        grid-column: 1 / 3;
+    }
+
+    .catalog--b2 .container{
+        grid-template-columns: auto auto;
+    }
+
+    .catalog.contentbox.img{
+        height: 40vh;
+    }
+
+    #c_cb_2{
+        grid-column: 2 / 3;
+    }
+
+    #c_cb_2{
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #c_cb_4{
+        grid-column: 1 / 2;
+    }
+
+    #c_cb_5{
+        grid-column: 2 / 3;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #menu{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .header__contentbox a:nth-of-type(-n+4){
+        margin-bottom: 10px;
+    }
+
+    .header__contentbox a:nth-child(3){
+        margin: 0;
+        padding: 0;
+    }
+
+    .header__logo, .header__contentbox{
+        display: none;
+    }
+
+    .header__contentbox{
+        flex-direction: column;
+    }
+
+    .header__contentbox.responsive{
+        display: flex;
+    }
+
+    #na_cb_2 .newarrivals.contentbox.img{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #na_cb_2:hover .newarrivals.contentbox.items{
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
+    .style--b4 .container {
+        flex-direction: column;
+    }
+
+    .style.contentbox.left,
+    .style.contentbox.right{
+        width: 100%;
+    }
+
+    .style.contentbox.left{
+        margin-bottom: 25px;
+    }
+     
+    .style.contentbox.right{
+        height: 45vh;
+    }
+
+    .galleryproduct--b5 .container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .chooseus--b3 .container{
+        grid-template-columns: auto;
+    }
+
+    #cu_cb_1{
+        grid-row: 1 / 2;
+    }
+
+    #cu_cb_2{
+        grid-row: 2 / 3;
+    }
+
+    #cu_cb_3{
+        grid-row: 3 / 4;
+    }
+
+    #cu_cb_4{
+        grid-row: 4 / 5;
+    }
+
+    #s_cb_1{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #s_cb_2{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #s_cb_3{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #s_cb_4{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .newcollection--b7 .container{
+        grid-template-columns: auto;
+    }
+
+    .discounts--b8 .container{
+        grid-template-columns: auto auto;
+    }
+
+    .newcollection.contentbox.img {
+        height: 40vh;
+    }
+
+    .form--b9 .container .container {
+        flex-direction: column;
+    }
+
+    .form.contentbox.left{
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #menu img{
+        max-width: 210px;
+    }
+
+    .newarrivals--b1 .container,
+    .catalog--b2 .container,
+    .galleryproduct--b5 .container,
+    .sale--b6 .container,
+    .discounts--b8 .container{
+        grid-template-columns: auto;
+    }
+
+    #na_cb_2 .newarrivals.contentbox.img{
+        display: grid;
+    }
+    
+    .catalog.contentbox p{
+        font-size: 18px;
+    }
+
+    .chooseus.contentbox h1{
+        font-size: 120px;
+    }
+
+    #c_cb_2,
+    #c_cb_4,
+    #c_cb_5,
+    #na_cb_3{
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .style.contentbox.left h1{
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    #s_cb_1,
+    #s_cb_2,
+    #s_cb_3,
+    #s_cb_4{
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+@media screen and (max-width: 425px){
+    #nc_cb_2 .newcollection.contentbox.items h1{
+        color: #fff;
+    }
+}

@@ -1,0 +1,369 @@
+/* -- IMPORTS -- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+@import url(flex-layouts.css);
+@import url(icons.css);
+
+
+:root {
+    --light-white: #f2f2f2;
+    --dark-grey: #717171;
+    --blue: #4472ce;
+    --shadow: 2px 2px 10px 2px rgb(0 0 0 / 10%);
+    --card-width: 335px;
+}
+
+/* -- NORMALIZE -- */
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul { 
+    list-style: none; 
+}
+
+button, input {
+    background: 0;
+    border: 0;
+    font-weight: 600;
+}
+
+
+/* -- UNI -- */
+/* -- */
+.indent-t-b {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* -- */
+.btn {
+    padding: 8px 16px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* -- */
+.btn-icon {
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.btn-icon:hover {
+    background-color: #000;
+}
+
+/* -- */
+.image-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* -- */
+.main-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* -- HEADER -- */
+.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo {
+    min-width: 250px;
+    height: 50px;
+    background-image: url(../img/logo.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.header-nav .btn-icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+.search {
+    border: 1px solid var(--dark-grey);
+    border-radius: 16px;
+    position: relative;
+}
+
+.search .icon-search {
+    position: absolute;
+    top: calc(50% - 17.5px);
+    left: 10px;
+}
+
+.ui-input__search {
+    padding: 10px 10px 10px 60px;
+    width: 400px;
+    height: 50px;
+    background: var(--light-white);
+    border-right: 1px solid var(--dark-grey);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.search-btns {
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.btn-filter {
+    padding: 8px 16px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-filter:hover {
+    background: var(--light-white);
+}
+
+.btn-filter.active, #c_group:checked + #b_group {
+    background: #000;
+    color: #fff;
+}
+
+.search-menu {
+    position: relative;
+}
+
+.filter-list {
+    padding: 20px 40px;
+    min-width: 250px;
+    background: #fff;
+    box-shadow: var(--shadow);
+    border-radius: 4px;
+    position: absolute;
+    top: 60px;
+    right: calc(50% - 125px);
+    z-index: 10;
+    display: none;
+}
+
+.filter-list.active {
+    display: block;
+}
+
+.filter-list .list-item {
+    padding: 5px 0;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.filter-list .list-item:hover p {
+    color: var(--blue);
+}
+
+.ui-wrap__label {
+    position: relative;
+}
+
+/* -- */
+.ui-radio__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+
+.ui-radio__item {
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--dark-grey);
+    border-radius: 50%;
+    display: block;
+}
+
+.ui-radio__input:checked + .ui-radio__item {
+    border: 5px solid var(--blue);
+}
+
+/* -- */
+.ui-checkbox_input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+
+
+
+/* -- CARDS -- */
+.cards-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--card-width), var(--card-width)));
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-item {
+    width: var(--card-width);
+    min-height: 300px;
+    background: var(--light-white);
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    position: relative;
+}
+
+.card-item__price {
+    padding: 8px 16px;
+    background: var(--blue);
+    color: #fff;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: var(--shadow);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-item__image {
+    height: 160px; 
+}
+
+.card-item__desc {
+    padding: 15px;
+    height: calc(100% - 160px);
+    font-size: 14px;
+}
+
+.card-item__desc .item-elem:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.card-item__name {
+    font-size: 20px;
+}
+
+.card-item__adress, .card-item__tel {
+    width: fit-content;
+    gap: 10px;
+}
+
+.card-item__tel:hover {
+    text-decoration: underline;   
+}
+
+.card-item__adress::before, .card-item__tel::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-item__adress::before {
+    background-image: url(../img/card-item/adress.svg);
+}
+
+.card-item__tel::before {
+    background-image: url(../img/card-item/tel.svg);
+}
+
+
+
+/* -- ACTION -- */
+.ui-input__input {
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    width: 300px;
+    background: #fff;
+    border: 1px solid var(--dark-grey);
+    border-radius: 16px;
+}
+
+.action .ui-input__input:last-of-type {
+    margin-bottom: 20px;
+}
+
+.action .msg {
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--blue);
+}
+
+
+
+/* -- MODAL -- */
+.modal {
+    padding: 40px;
+	background: #fff;
+    border-radius: 16px;
+    box-shadow: var(--shadowshadow);
+	display: none;
+    justify-content: center;
+    position: relative;
+}
+
+.modal.active {
+	display: flex;
+}
+
+.modal-overlay {
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+	left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0,0,0, 0.75);
+	opacity: 0;
+	visibility: hidden;
+    z-index: 999;
+}
+
+.modal-overlay.active {
+	opacity: 1;
+	visibility: visible;
+}

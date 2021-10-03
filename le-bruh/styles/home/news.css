@@ -1,0 +1,23 @@
+/* NEWS */
+.news #wrapper{
+    animation-name: slider;
+    animation-delay: 5s;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+/* ANIMATION */
+@keyframes slider{
+    0%{
+        background: url(../../images/news/1.jpg) top;
+        background-size: cover;
+    }
+    50%{
+        background: url(../../images/news/2.jpg) top;
+        background-size: cover;
+    }
+    100%{
+        background: url(../../images/news/3.jpg) top;
+        background-size: cover;
+    }
+}

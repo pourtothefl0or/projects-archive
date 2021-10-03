@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --main-green: #2D803D;
+    --green-gradient: linear-gradient(255.96deg, #006A44 0%, #A7BC27 100%);
+    --card-size: 36rem;
+    --border-radius: 16px;
+    --box-shadow: 0 0 20px -5px #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 16px;
+    background: #F0F0F0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+/* UNI */
+/* 1 */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* 2 */
+.title {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* 3 */
+.button {
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: 700;
+    background: var(--green-gradient);
+    color: #fff;
+    border: 0;
+    border-radius: var(--border-radius);
+}
+
+.button:hover {
+    box-shadow: var(--box-shadow);
+}
+
+/* 4 */
+.functions-title {
+    display: flex;
+    align-items: center;
+}
+
+.functions-title .add-item {
+    margin-left: 2rem;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+/* HEADER */
+.header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: var(--main-green);
+}
+
+.header a {
+    color: #fff;
+}
+
+.header .container {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header-list{
+    display: flex;
+    align-items: center;
+}
+
+.header-list .list-item:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.header-list .item-link{
+    font-size: 1.6rem;
+    color: rgba(255,255,255, 0.8)
+}
+
+.header-list .item-link:hover {
+    color: #fff;
+}
+
+.header-list .item-link.active {
+    padding: .5rem 1rem;
+    background: #539335;
+    color: #fff;
+    border-radius: var(--border-radius); 
+}
+
+
+
+/* PRODUCTS */
+.products-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--card-size), var(--card-size)));
+    gap: 2rem;
+}
+
+.cards-item {
+    padding: 2rem;
+    width: var(--card-size);
+    height: 18rem;
+    background: var(--green-gradient);
+    border-radius: var(--border-radius);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card__functions {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.card__functions .button-delete {
+    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background: url(../images/functions/delete.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 0;
+    border-radius: 50%
+}
+
+.button-delete:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.card__image {
+    width: 5rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.info__date {
+    font-weight: 700;
+}
+
+
+
+/* FORMS */
+.forms .container {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-input {
+    padding: 1rem;
+    width: 40rem;
+    border: 2px solid gray;
+    border-radius: var(--border-radius);
+}
+
+.form-input:hover, .form-input:focus {
+    border: 2px solid var(--main-green);
+    box-shadow: var(--box-shadow);
+}
+
+.form-content .button {
+    margin-top: 2rem;
+    align-self: center;
+}
+
+/* -> select */
+.form-input.select:required:invalid {
+    color: gray;
+}
+
+.form-input.select:invalid > option[value=""][disabled] {
+    display: none;
+}
+
+.form-input.select option {
+    color: #000;
+}
+
+.form-error {
+    margin-top: 1rem;
+    text-align: center;
+    color: #ff0000;
+}
+
+
+
+/* CHECKS */
+.checks {
+    margin-bottom: 2rem;
+}
+
+.checks__sum {
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.checks__sum span {
+    font-weight: 400;
+}
+
+.checks-item {
+    margin-bottom: 1rem;
+    padding: 2rem;
+    min-width: calc(var(--card-size) + 10rem);
+    max-width: 100rem;
+    height: 8rem;
+    background: #fff;
+    border-radius: var(--border-radius);
+    display: grid;
+    grid-template-columns: 10rem 1fr 15rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.check__date {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.check__sum {
+    justify-self: end;
+}

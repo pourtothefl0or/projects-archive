@@ -1,0 +1,88 @@
+/* -- NAVIGATION -- */
+header a:first-child{
+    z-index: 1;
+}
+
+/* BUTTON */
+header .nav__burger{
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+header .nav__burger div{
+    width: 20px;
+    height: 2px;
+    background: #000;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+header .nav__burger .line2{
+    width: 25px;
+}
+
+
+/* -- MEDIA -- */
+@media screen and (max-width: 1100px){
+    /* NAVIGATION */
+    header #nav__list li:not(:last-child){
+        margin: 0 0 5vh 0;
+    }
+
+    header a{
+        font-size: 25px;
+    }
+    
+    header .section__nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background: #fff;
+        height: 92vh;
+        width: 100%;
+
+        position: absolute;
+        top: 8vh;
+        left: 0;
+
+        transform: translateY(-100%);
+        transition: transform 0.5s ease;
+    }
+
+    header .section__nav.active{
+        transform: translateY(0%);
+        border-bottom: 1px solid #000;
+    }
+
+
+    /* BUTTON */
+    header .nav__burger{
+        display: unset;
+    }
+
+    /* BUTTON ANIMATION */
+    header .nav__burger.active .line1{
+        width: 25px;
+        transition: 0.5s;
+        transform: translateY(6px) rotate(135deg);
+    }
+
+    header .nav__burger.active .line2{
+        opacity: 0;
+    }
+
+    header .nav__burger.active .line3{
+        width: 25px;
+        transition: 0.5s;
+        transform: translateY(-8px) rotate(45deg);
+    }
+}
+
+@media screen and (max-width: 700px){
+    header a:first-child{
+        z-index: unset;
+    }
+}

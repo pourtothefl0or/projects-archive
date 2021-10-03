@@ -1,0 +1,126 @@
+/* -- MEDIA -- */
+@media screen and (max-width: 1455px){
+    /* WE */
+    main .we #wrapper {
+        grid-template-columns: calc(100% / 2) calc(100% / 2);
+        grid-row-gap: 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    /* CATALOG */
+    main .catalog #wrapper{
+        grid-template-columns: calc((100% - 15px) / 2) calc((100% - 15px) / 2);
+        grid-row-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    /* NEWS */
+    main .news .news__info h1{
+        font-size: 2.5em;
+    }
+
+    main .news .news__info p{
+        font-size: 2.5em;
+    }
+    
+
+    /* CATALOG */
+    main .catalog h1{
+        font-size: 1.7em;
+    }
+
+
+    /* REVIEWS */
+    main .reviews .reviews__info h2,
+    main .reviews .reviews__info p{
+        font-size: 1em;
+    }
+
+    main .reviews img {
+        width: 51px;
+        height: 51px;
+    }
+
+    main .reviews img {
+        width: 51px;
+        height: 51px;
+    }
+
+
+    /* MAIL */
+    main .mail h1{
+        font-size: 1.7em;
+    }
+
+
+    /* FOOTER */
+    footer .footer__section #wrapper {
+        grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+        grid-row-gap: 20px;
+        text-align: center;
+    }
+
+    footer .footer__section #nav__list:nth-child(1){
+        grid-column: 1 / 4;
+        margin-right: 0;
+        
+    }
+
+    footer .footer__section #nav__list:last-child{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 750px){
+    /* NEWS */
+    main .news .news__info p{
+        font-size: 1.5em;
+    }
+
+    /* WE */
+    main .we #wrapper {
+        grid-template-columns: 100%;
+    }
+
+    footer .footer__section #wrapper {
+        grid-template-columns: 100%;
+    }
+
+    footer .footer__section #nav__list:nth-child(1){
+        grid-column: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /* NEWS */
+    main .news .news__info h1,
+    main .news .news__info p{
+        font-size: 2em;
+    }
+
+
+    /* CATALOG */
+    main .catalog #wrapper{
+        grid-template-columns: calc(100% - 15px);
+    }
+
+    /* MAIL */
+    main .mail .mail__section{
+        flex-direction: column;
+    }
+    
+    main .mail .mail__section input:first-child{
+        margin: 0 0 -2px 0;
+    }
+
+    main .mail .mail__section input{
+        width: auto;
+    }
+
+    .mail .mail__section input[type="email"]::placeholder{
+        text-align: center;
+    }
+}

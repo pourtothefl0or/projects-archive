@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div id="wrapper">
+            <a href="#"><img id="logo" src="images/logo.png" alt="logo"></a>
+            <ul id="nav__list" class="section__nav">
+                <li><a href="#">Бестселлеры</a></li>
+                <li><a href="#">Скидки</a></li>
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Избранное</a></li>
+                <li><a href="#">Корзина</a></li>
+            </ul>
+            <div class="nav__burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- NEWS -->
+        <div class="news">
+            <div id="wrapper">
+                <section class="news__info">
+                    <h1>НОВАЯ КОЛЛЕКЦИЯ 2020</h1>
+                    <p>ДЛЯ ЛЮБОГО СЛУЧАЯ</p>
+                    <a href="#" id="button">В КАТАЛОГ</a>
+                </section>
+            </div>
+        </div>
+        <!-- CATALOG -->
+        <div class="catalog">
+            <h1>ПОПУЛЯРНЫЕ ТОВАРЫ</h1>
+            <div id="wrapper">
+                <section class="card">
+                    <a href="#">
+                        <div class="card__imagebox">
+                            <img src="images/catalog/1.jpg" alt="">
+                            <img src="images/catalog/1-1.jpg" alt="">
+                        </div>
+                        <div class="card__info">
+                            <h2>Ветровка</h2>
+                            <p>5999 руб</p>
+                        </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a href="#">
+                        <div class="card__imagebox">
+                            <img src="images/catalog/2.jpg" alt="">
+                            <img src="images/catalog/2-1.jpg" alt="">
+                        </div>
+                        <div class="card__info">
+                            <h2>Пальто</h2>
+                            <p>12699 руб</p>
+                        </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a href="#">
+                        <div class="card__imagebox">
+                            <img src="images/catalog/3.jpg" alt="">
+                            <img src="images/catalog/3-1.jpg" alt="">
+                        </div>
+                        <div class="card__info">
+                            <h2>Пальто</h2>
+                            <p>7999 руб</p>
+                        </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a href="#">
+                        <div class="card__imagebox">
+                            <img src="images/catalog/4.jpg" alt="">
+                            <img src="images/catalog/4-1.jpg" alt="">
+                        </div>
+                        <div class="card__info">
+                            <h2>Куртка</h2>
+                            <p>16999 руб</p>
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </div>
+        <!-- REVIEWS -->
+        <div class="reviews">
+            <div id="wrapper">
+                <img class="reviews__logo" src="images/reviews/1.png" alt="">
+                <section class="reviews__info">
+                    <h2>Это прекрасный магазин. Тут вся одежда садится идеально. Советую всем своим друзьям. Заказываю у вас уже не первый год. Спасибо!</h2>
+                    <p>НИКОЛАЙ, 29 ЛЕТ</p>
+                </section>
+            </div>
+        </div>
+        <!-- WE -->
+        <div class="we">
+            <div id="wrapper">
+                <section class="card">
+                    <img src="images/we/1.png" alt="">
+                    <div class="we__info">
+                        <h3>ЛУЧШАЯ РАССЫЛКА</h3>
+                        <p>Всё подскажем и расскажем</p>
+                        <a href="#" id="button">СМОТРЕТЬ</a>
+                    </div>
+                </section>
+                <section class="card">
+                    <img src="images/we/2.png" alt="">
+                    <div class="we__info">
+                        <h3>БЫСТРАЯ ДОСТАВКА</h3>
+                        <p>Доставим вещи в рекордные сроки</p>
+                        <a href="#" id="button">СМОТРЕТЬ</a>
+                    </div>
+                </section>
+                <section class="card">
+                    <img src="images/we/3.png" alt="">
+                    <div class="we__info">
+                        <h3>ПОСЛЕДНИЕ НОВИНКИ</h3>
+                        <p>Мы ещё те модники</p>
+                        <a href="#" id="button">СМОТРЕТЬ</a>
+                    </div>
+                </section>
+                <section class="card">
+                    <img src="images/we/4.png" alt="">
+                    <div class="we__info">
+                        <h3>МАЛЫЕ ЦЕНЫ</h3>
+                        <p>Кроссы долетят до Антарктиды</p>
+                        <a href="#" id="button">СМОТРЕТЬ</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- MAIL -->
+        <div class="mail">
+            <h1>ОФОРМИТЕ ПОДПИСКУ НА НОВОСТИ</h1>
+            <div id="wrapper">
+                <form class="mail__section" method="post">
+                    <input type="email" placeholder="Введите вашу почту..." required>
+                    <input type="submit" value="Подписаться">
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <!-- LINE -->
+        <div class="line"></div>
+        <!-- FOOTER MAIN -->
+        <div class="footer__section">
+            <div id="wrapper">
+                <ul id="nav__list">
+                    <li><img id="logo" src="images/logo.png" alt=""></li>
+                    <li>Если вы ищете изысканную одежду, которая бы нравилась вам по дизайну и отвечала функциональным требованиям,
+                        и в то же время вы готовы сэкономить свое время, то наш интернет-магазин - это идеальный вариант для вас.</li>
+                </ul>
+                <ul id="nav__list">
+                    <li><p>КАТАЛОГ</p></li>
+                    <li><a href="#">Верхняя одежда</a></li>
+                    <li><a href="#">Аксессуары</a></li>
+                    <li><a href="#">Обувь</a></li>
+                </ul>
+                <ul id="nav__list">
+                    <li><p>ИНФОРМАЦИЯ</p></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Обратная связь</a></li>
+                    <li><a href="#">Обмен и возврат</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                </ul>
+                <ul id="nav__list">
+                    <li><p>ОБРАТНАЯ СВЯЗЬ</p></li>
+                    <li><a href="#">+7 (495) 123-45-67</a></li>
+                    <li><a href="#">+7 (495) 765-43-21</a></li>
+                    <li><a href="#">00-00-00</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- FOOTER SOCIAL -->
+        <div class="footer__subsection">
+            <ul id="nav__list">
+                <li><a href="#">VK</a></li>
+                <li><a href="#">IN</a></li>
+                <li><a href="#">FC</a></li>
+                <li><a href="#">TW</a></li>
+                <li><a href="#">YT</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="scripts/menu.js"></script>
+</html>

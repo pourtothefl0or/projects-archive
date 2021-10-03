@@ -1,0 +1,19 @@
+/* HEADER */
+.header {
+    position: static;
+}
+
+
+/* BOOKS */
+.books.pd {
+    margin-bottom: 4rem;
+}
+
+
+/* IFRAME */
+iframe {
+    zoom: 1;
+    width: 100%;
+    max-width: 1400px;
+    height: 80vh;
+}

@@ -1,0 +1,820 @@
+/* ///START */
+*{
+	margin: 0;
+	padding: 0;
+	transition: 0.5s;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	background: #f5f5f5;
+}
+
+input, textarea, button{
+	font-family: 'Montserrat', sans-serif;
+	border: 0;
+	outline: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+/* Отступы */
+.container{
+	margin: 0 7.2%;
+}
+/* ///END */
+
+
+/* Блок 1 + 10 > Кнопка */
+#btn{
+	margin-top: 65px;
+}
+
+#btn a, input[type=submit]{
+	background: #3f70ba;
+	color: #fff;
+	padding: 23px 36px;
+	font-size: 14px;
+}
+
+#btn a:hover, input[type=submit]:hover, input[type=submit]:active{
+	background: #1a4079;
+	outline: none;
+	transition: 0.8s;
+}
+/* ///END */
+
+
+/* Шапка */
+header{
+	margin: 30px 0;
+}
+
+/* Шапка (Отступы) */
+header .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+header a{
+	font-weight: 800;
+	color: #000;
+}
+
+header a:hover{
+	color: #3f70ba;
+}
+
+/* Шапка > Навигация (Отступы) */
+.header_block.right{
+	margin: auto 0;
+}
+
+#nav-switch{
+	margin-left: 25px;
+}
+
+.nav.container a:nth-of-type(-n+2){
+	margin-right: 25px;
+}
+
+/* Шапка > Навигация > Адаптивное меню (Кнопка) */
+.header_block.right #menu{
+	display: none;
+	font-size: 24px;
+}
+/* ///END */
+
+
+/* Блок 1 */
+.wedesign--b1{
+	padding: 145px 0 200px 0; /* margin-top: 185 - 45 */
+	background: url(../images/bg1.jpg) center;
+	background-size: cover;
+}
+
+/* Блок 1 > Правый контект бокс */
+.wedesign_block.left p{
+	margin-top: 40px;
+	line-height: 1.5em;
+}
+
+/* Блок 1 > Правый контект бокс (Отступ) */
+.wedesign_block.left .container{
+	margin: 0 0 0 70%;
+}
+/* ///END */
+
+
+/* Блок 2 */
+.aboutus--b2{
+	background: #fff;
+	padding: 100px 0;
+}
+
+/* Блок 2 (Отступы) */
+.aboutus--b2 .container{
+	margin: 0 31.5%;
+}
+
+/* Блок 2 > Центральный контект бокс */
+.aboutus_block.middle{
+	text-align: center;
+}
+
+/* Блок 2 > Регулировка размера текста с макетом */
+.aboutus_block.middle p{
+	margin: 0 2%;
+	line-height: 1.5em;
+	color: #787878;
+}
+
+.aboutus_block.middle p, .aboutus_block.middle img{
+	margin-top: 40px;
+}
+/* ///END */
+
+
+/* Блок 3 */
+.skills--b3{
+	display: flex;
+}
+
+/* Блок 3 > Левый и правый контект бокс */
+.skills_block.left, .skills_block.right{
+	padding: 165px 0;
+}
+
+/* Блок 3 > Левый контект бокс */
+.skills_block.left{
+	background: #f8f9f9;
+	width: 50%
+}
+
+/* Блок 3 (Отступы) */
+.skills_block.left .container{
+	margin: 0 7.2% 0 14.4%;
+}
+
+/* Блок 3 > Левый контект бокс > Колонки + Линии */
+.skills_col.line{
+	margin-top: 40px;
+	font-weight: 800;
+}
+
+.skills_col.line p{
+	display: inline-block;
+	margin-right: 18px;
+}
+
+.skills_col.line div{
+	margin-top: 18px;
+	background: #d8d8d8;
+	height: 4px;
+}
+
+/* Блок 3 (Линии заполнения статистики) */
+.skills_col.line div ._75proc{
+	background: #3f70ba;
+	height: 4px;
+	width: 75%;
+}
+
+.skills_col.line div ._90proc{
+	background: #3f70ba;
+	height: 4px;
+	width: 90%;
+}
+
+.skills_col.line div ._65proc{
+	background: #3f70ba;
+	height: 4px;
+	width: 65%;
+}
+
+/* Блок 3 > Правый контект бокс */
+.skills_block.right{
+	background: url(../images/bg2.jpg) center;
+	background-size: cover;
+	width: 50%
+}
+/* ///END */
+
+
+/* Блок 4 */
+.iconcards--b4{
+	background: #3f70ba;
+	padding: 60px 0;
+}
+
+/* Блок 4 (Отступы) */
+.iconcards--b4 .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Блок 4 > Карточки */
+.b4-cards_box{
+	display: flex;
+}
+
+.b4-cards_box img{
+	margin: 5px 27px 0 0;
+	width: 40px;
+	height: 40px;
+}
+
+.b4-cards_box div h3, .b4-cards_box div p{
+	color: #fff;
+}
+
+.b4-cards_box div p{
+	margin-top: 15px;
+}
+/* ///END */
+
+
+/* Блок 5 */
+.chooseus--b5{
+	margin: 100px 0;
+}
+
+/* Блок 5 > Центральный контект бокс */
+.chooseus_block.middle{
+	text-align: center;
+}
+
+/* Блок 5 > Центральный контект бокс > Регулировка размера текста с макетом */
+.chooseus_block.middle > p{
+	margin: 40px 35% 0 35%;
+	line-height: 1.5em;
+	color: #787878;
+}
+
+/* Блок 5 > Центральный контект бокс > Карточки (Отступы) */
+.chooseus_block.middle .container{
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 50px;
+}
+
+/* Блок 5 > Центральный контект бокс > Карточки */
+.b5-chooseus_box{
+	background: #fff;
+	padding: 65px;
+}
+
+.b5-chooseus_box{
+	text-align: left;
+	overflow: hidden;
+	transition: all 0.1s ease-in-out;
+}
+
+.b5-chooseus_box h4{
+	margin-bottom: 25px;
+}
+
+.b5-chooseus_box h4 span{
+	margin: 0 20px 0 -25px;
+	color: #3f70ba;
+	font-size: 24px;
+}
+
+.b5-chooseus_box p:first-of-type{
+	font-size: 200px;
+	position: relative;
+	top: -125px;
+	left: -105px;
+	margin-bottom: -120px; /* Исправить костыль */
+}
+
+/* Блок 5 > Центральный контект бокс > Карточки (Подсвечивание) */
+.b5-chooseus_box:hover{
+	background: #3f70ba;
+	color: #fff;
+	transition: 0.2s;
+	transform: translateY(20px);
+}
+
+.b5-chooseus_box:hover > span{
+	display: none;
+}
+
+.b5-chooseus_box:hover h4{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.b5-chooseus_box:hover p:last-of-type{
+	text-align: center;
+}
+/* ///END */
+
+
+/* Блок 6 */
+.ourworkprocess--b6{
+	padding: 100px 0;
+	background: #fff;
+}
+
+/* Блок 6 > Центральный контект бокс */
+.ourworkprocess_block.middle{
+	text-align: center;
+	margin: 0 32%;
+}
+
+/* Блок 6 > Регулировка размера текста с макетом */
+.ourworkprocess_block.middle p{
+	margin: 40px 2% 0 2%;
+	line-height: 1.5em;
+	color: #787878;
+}
+
+/* Блок 6 > Видео */
+.ourworkprocess--b6 .container iframe{
+	margin-top: 65px;
+	border: 0;
+	width: 100%;
+	height: 720px;
+}
+/* ///END */
+
+
+/* Блок 7 */
+.iconcards--b7{
+	padding: 160px 0 100px 0;
+	background: #f5f5f5;
+	text-align: center;
+}
+
+/* Блок 7 (Отступы) */
+.iconcards--b7 .container{
+	margin: 0 3.6%;
+}
+
+/* Блок 7 */
+.iconcards_col.line{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 20px;
+	margin-bottom: 60px;
+}
+
+.b7-cards_box img, .b7-cards_box h4{
+	margin-bottom: 25px;
+}
+
+.b7-cards_box h4{
+	color: #3f70ba;
+}
+
+/* Блок 7 > Регулировка размера текста с макетом */
+.b7-cards_box p{
+	color: #858585;
+	text-align: center;
+	margin: 0 18%;
+	line-height: 1.5em;
+}
+/* ///END */
+
+
+/* Блок 8 */
+.outstanding--b8{
+	padding: 170px 0 60px 0;
+	background: #3f70ba;
+	text-align: center;
+}
+
+.outstanding--b8 h1{
+	color: #fff;
+	line-height: 1.5em;
+	margin: 0 15% 40px 15%;
+}
+
+.outstanding--b8 p{
+	color: #fff;
+}
+
+.outstanding_block.middle > p{
+	margin-bottom: 105px;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.outstanding.btn{
+	text-align: center;
+	margin-top: 105px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.outstanding.btn label{
+	display: inline-block;
+    width: 6px;
+    height: 6px;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	margin: 0 10px;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: 0.1s;
+}
+
+#outstanding_block-row1, #outstanding_block-row3{
+	display: none;
+}
+
+#SliderCheck1:checked ~ .outstanding.btn label:nth-child(1), #SliderCheck2:checked ~ .outstanding.btn label:nth-child(2), #SliderCheck3:checked ~ .outstanding.btn label:nth-child(3){
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	opacity: 1;
+}
+/* ///END */
+
+
+/* Блок 9 */
+.cooperation--b9{
+	padding: 68px 0;
+	background: #fff;
+}
+
+/* Блок 9 > Центральный контект бокс */
+.cooperation_block.middle{
+	display: flex;
+	justify-content: space-between;
+}
+/* ///END */
+
+
+/* Блок 10 */
+.needproject--b10{
+	padding: 100px 0;
+}
+
+.needproject_block.middle{
+	text-align: center;
+}
+
+/* Блок 10 > Центральный контект бокс */
+.needproject_block.middle > p{
+	margin: 40px 30.5% 0 30.5%;
+	color: #a9a9a9;
+	line-height: 1.5em;
+}
+
+/* Блок 10 > Форма (Центровка) */
+.contactinfo_block.form{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Блок 10 > Ввод */
+.ci_b_f_c-1, .ci_b_f_c-2{
+	height: 50px;
+	width: 310px;
+	padding: 0 20px;
+	margin-bottom: 30px;
+}
+
+.ci_b_f_c-1{
+	margin-right: 25px;
+}
+
+.ci_b_f_c-3, .ci_b_f_c-4{
+	height: 50px;
+	width: 690px;
+	padding: 0 20px;
+	
+}
+.ci_b_f_c-3{
+	margin-bottom: 30px;
+}
+
+.ci_b_f_c-4{
+	padding-top: 21px;
+	padding-bottom: 105px;
+}
+/* ///END */
+
+
+/* Подвал */
+footer{
+	background: #000;
+	padding: 100px 0;
+}
+
+/* Подвал > Левый контект бокс */
+.footer_block.left{
+	display: flex;
+	justify-content: space-between;
+}
+
+footer h4{
+	color: #fff;
+}
+
+footer p, footer a{
+	color: #787878;
+}
+
+footer a:hover{
+	color: #3f70ba;
+}
+
+/* Подвал > Правый контект бокс */
+.footer_block.right{
+	display: flex;
+}
+
+.footer_box.col2 li, .footer_box.col3 li, .footer_box.col4 li, .footer_box.col5 li{
+	margin-bottom: 10px;
+}
+
+/* Подвал > Колонка 1 */
+.footer_box.col1 li{
+	margin-bottom: 31px;
+}
+
+/* Подвал > Колонка 2 */
+.footer_box.col2{
+	margin-right: 280px; /* 153 + 130 */
+}
+
+.footer_box.col2 a{
+	color: #fff;
+}
+
+.footer_box.col2 a:hover{
+	color: #3f70ba;
+}
+
+/* Подвал > Колонка 3 */
+.footer_box.col3{
+	margin-right: 56px;
+}
+
+/* Подвал > Колонка 4 */
+.footer_box.col4{
+	margin-right: 136px;
+}
+/* ///END */
+
+
+/* Медиа-запрос 1450px */
+@media screen and (max-width: 1450px){
+	/* Блок 10 */
+	.ci_b_f_c-1, .ci_b_f_c-2, .ci_b_f_c-3, .ci_b_f_c-4{
+		width: 48vw;
+	}
+
+	.ci_b_f_c-1{
+		margin-right: 0;
+	}
+
+	/* Подвал */
+	.footer_box.col2{
+		margin-right: 56px;
+	}
+}
+/* ///END */
+
+
+/* Медиа-запрос 1200px */
+@media screen and (max-width: 1200px){
+	/* Блок 5 */
+	.chooseus_block.middle .container{
+		grid-template-columns: auto;
+		grid-gap: 40px;
+	}
+
+	.b5-chooseus_box:hover{
+		transform: unset;
+	}
+
+	.b5-chooseus_box p:first-of-type{
+		font-size: 115px;
+		top: -100px;
+		left: -90px;
+		margin-bottom: -90px; /* Исправить костыль */
+	}
+	
+}
+/* ///END */
+
+
+/* Медиа-запрос 1160px */
+@media screen and (max-width: 1160px){
+	/* Блок 1 */
+	.wedesign_block.left{
+		text-align: center;
+	}
+
+	.wedesign_block.left .container{
+		margin: 0;
+	}
+
+	/* Подвал */
+	.footer_block.left{
+		flex-flow: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.footer_block.right{
+		margin-top: 35px;
+	}
+
+	.footer_box.col2, .footer_box.col3{
+		margin-right: 0;
+	}
+
+	.footer_box.col4{
+		margin: 0 75px;
+	}
+}
+/* ///END */
+
+
+/* Медиа-запросы 850px */
+@media screen and (max-width: 850px){	
+	/* Блок 4 */
+	.iconcards--b4 .container{
+		flex-flow: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.b4-cards_box{
+		display: unset;
+	}
+
+	.b4-cards_box:nth-of-type(-n+3){
+		display: unset;
+		margin-bottom: 50px;
+	}
+
+	.b4-cards_box img{
+		margin: 0 0 15px 0;
+	}
+
+	/* Блок 7 */
+	.iconcards_col.line{
+		display: unset;
+		grid-template-columns: unset;
+		grid-column-gap: unset;
+	}
+
+	.b7-cards_box:nth-of-type(-n+7){
+		margin-bottom: 60px;
+	}
+
+	/* Отступы */
+	/* Блок 2 */
+	.aboutus--b2 .container{
+		margin: 0 7.2%;
+	}
+
+	/* Блок 6 */
+	.ourworkprocess_block.middle{
+		margin: 0 7.2%;
+	}
+
+	/* Блок 8 */
+	.outstanding--b8 h1{
+		margin: 0 7.2% 40px 7.2%;
+	}
+}
+/* ///END */
+
+
+/* Медиа-запросы 670px */
+@media screen and (max-width: 670px){
+	/* Блок 3 */
+	.skills--b3{
+		display: unset;
+	}
+
+	.skills_block.left .container{
+		margin-left: 7.2%;
+		text-align: center;
+	}
+
+	.skills_block.left, .skills_block.right{
+		width: 100%;
+	}
+
+	.skills_block.right{ /* При добавлении контента включить назад */
+		display: none;
+	}
+
+	/* Блок 9 */
+	.cooperation_block.middle{
+		flex-flow: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.cooperation_block.middle a:nth-of-type(-n+4){
+		margin-bottom: 34px;
+	}
+}
+/* ///END */
+
+
+/* Медиа-запросы 615px */
+@media screen and (max-width: 615px){
+	/* Блок 2 */
+	.aboutus_block.middle img{
+		width: 45%;
+	}
+
+	/* Шрифт (Изменение размера) */
+	/* Шапка */
+	.nav.container.responsive a{
+		font-size: 18px;
+	}
+	
+	/* Блок 2, 3, 4, 5, 6, 7, 8, 10 */
+	.aboutus_block.middle p, .skills_col.line p, .b4-cards_box div p, .b5-chooseus_box p, .ourworkprocess_block.middle p, .b7-cards_box p, .outstanding_block.middle h1, .needproject_block.middle p{
+		font-size: 14px;
+	}
+	
+	/* Кнопки (Изменение размера) */
+	#btn a, input[type=submit]{
+		padding: 15px 20px;
+	}
+}
+/* ///END */
+
+
+/* Медиа-запросы 500px (Включение адаптивного меню) */
+@media screen and (max-width: 500px){
+	/* Шапка > Логотип (Отключение) > Адаптивное меню */
+	.header.logo{
+		display: none;
+	}
+
+	/* Шапка (Отступы) (Центрирование вложенных элементов) */
+	header .container{
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	#nav-switch{
+		margin-left: 0;
+	}
+
+	.nav.container a:nth-of-type(-n+3){
+		margin-top: 20px;
+		margin-right: 0;
+	}
+
+	/* Шапка > Навигация > Адаптивное меню */
+	.header_block.right #menu{
+		display: unset;
+	}
+		
+	.nav.container{
+		display: none;
+	}
+
+	.nav.container.responsive{
+		display: flex;
+	}
+}
+/* ///END */
+
+
+/* Медиа-запросы 420px */
+@media screen and (max-width: 420px){
+	/* Блок 8 */
+	.outstanding_block.middle h1{
+		font-size: 20px;
+	}
+
+	/* Подвал */
+	.footer_block.right{
+		display: unset;
+	}
+
+	/* Подвал > Колонка 3 + 4 (Отступы) */
+	.footer_box.col3, .footer_box.col4{
+		margin-bottom: 35px;
+	}
+}
+/* ///END */

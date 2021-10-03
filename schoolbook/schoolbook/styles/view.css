@@ -1,0 +1,33 @@
+/* HEADER */
+.header {
+    position: static;
+}
+
+
+/* BOOKS */
+.books.pd {
+    margin-bottom: 4rem;
+}
+
+.books-description {
+    align-self: flex-start;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.column-element{
+    margin-bottom: 20px;
+}
+
+.column-element.sub {
+    margin-bottom: 40px;
+}
+
+
+/* IFRAME */
+iframe {
+    zoom: 1;
+    width: 100%;
+    max-width: 1400px;
+    height: 80vh;
+}

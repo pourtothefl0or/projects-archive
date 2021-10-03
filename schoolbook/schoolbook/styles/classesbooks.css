@@ -1,0 +1,11 @@
+/* HEADER */
+.header {
+    position: static;
+    z-index: 1;
+}
+
+
+/* BOOKS */
+.books.pd {
+    margin-bottom: 4rem;
+}

@@ -1,0 +1,57 @@
+/* MAIN */
+main {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* HEADER */
+.header {
+    position: static;
+    background: #3E2856;
+}
+
+header a {
+    color: #fff;
+}
+
+.middle .list-item:hover {
+    transition: .3s;
+    border-bottom: 1px solid #fff;
+}
+
+.list-sublist {
+    margin-top: 2rem;
+}
+
+.item-link.button {
+    background: #F1E4FF;
+    color: #3E2856;
+}
+
+
+/* SIGN*/
+.sign.pd {
+    margin-bottom: 4rem;
+}
+
+.sign-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-label {
+    align-self: flex-start;
+}
+
+.info-input {
+    margin: 0.5rem 0;
+    min-width: 350px;
+    padding: 0.625rem 2rem;
+    border-radius: 8px;
+    border: 1px solid #000;
+}

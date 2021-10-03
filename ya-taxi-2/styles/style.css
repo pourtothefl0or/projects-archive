@@ -1,0 +1,538 @@
+/* Шрифт */
+@font-face{
+    font-family: 'YandexSansDisplay-Regular';
+    src: url(../fonts/YandexSansDisplay-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'YandexSansDisplay-Bold';
+    src: url(../fonts/YandexSansDisplay-Bold.ttf);
+}
+
+
+/* Базовые настройки */
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --ff-regular: 'YandexSansDisplay-Regular', sans-serif;
+    --ff-bold: 'YandexSansDisplay-Bold', sans-serif;
+
+    --ff-color-white: #ffffff;
+    --ff-color-black: #000000;
+    --ff-color-grey: #8b8b8b;
+    --ff-color-yellow: #ffdf39;
+    --ff-color-red: #ff0000;
+
+    --bg-first: #ffffff;
+    --bg-second: #f0f0f0;
+    --bg-third: #222222;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    color: var(--ff-color-black);
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
+}
+
+h1, h2, h3, h4{
+    font-family: var(--ff-bold);
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+  font-size: 2rem;  
+}
+
+a, p, span, input{ 
+    font-family: var(--ff-regular);
+}
+
+
+/* Унифицированные свойства */
+.wrapper{
+    margin: 0 6.25rem;
+    display: flex;
+}
+
+#disable-sp{
+    margin-right: 0;
+}
+
+.left-container{
+    width: 40vw;
+}
+
+.right-container{
+    position: relative;
+    width: 60vw;
+}
+
+.right-container img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#btn{
+    padding: .5rem 1vw;
+    background: var(--ff-color-yellow);
+    font-weight: bold;
+}
+
+#btn:hover{
+    background: #eecf36;
+}
+
+/* Блок 1 */
+header{
+    background: var(--bg-first );
+}
+
+header a{
+    color: var(--ff-color-grey);
+}
+
+header .wrapper{
+   padding:  1.25rem 0;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header__logo a{
+    display: inline-block;
+}
+
+.header__logo a:nth-of-type(1){
+    margin-right: 1.5rem;
+}
+
+.header__logo img{
+    max-width: 100%;
+}
+
+.header__menu{
+    text-align: center;
+}
+
+.header__menu li{
+    display: inline-block;
+    height: 1.5rem;
+}
+
+.header__menu li:not(:last-child){
+    margin-right: 1rem;
+}
+
+.header__call{
+    text-align: center;
+}
+
+.header__call p:first-child{
+    margin-bottom: .1rem;
+    color: var(--ff-color-black);
+    font-family: var(--ff-bold);
+    font-size: 1.2rem;
+}
+
+.header__call p:last-child{
+    text-decoration: underline;
+}
+
+
+/* Блок 2 */
+.offer{
+    background: var(--bg-second);
+}
+
+.offer .left-container{
+    padding: 6.25rem 0;
+}
+
+.offer .left-container h1:nth-of-type(1){
+    margin-bottom: 1rem;
+}
+
+.offer .left-container p:nth-of-type(1){
+    margin-bottom: 2.5rem;
+}
+
+.offer .left-container h1:nth-of-type(2){
+    margin-bottom: 1rem;
+}
+
+.offer .left-container p:nth-of-type(2){
+    margin-bottom: 4rem;
+}
+
+.offer #btn{
+    padding: 1rem 3vw;
+}
+
+/* Блок 3 */
+.select-car{
+    background: var(--bg-first);
+}
+
+.select-car .wrapper{
+    padding-top: 8rem;
+    display: block;
+}
+
+.select-car h2{
+    margin-bottom: 4rem;
+}
+
+.select-car .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32.5rem, 1fr));
+    gap: 6.25rem 1rem;
+    justify-items: center;
+}
+
+.select-car .object img{
+    width: 32.5rem;
+    height: 13.5rem;
+    object-fit: contain;
+}
+
+.select-car .object__items{
+    display: flex;
+    align-items: center;
+}
+
+.select-car .object__items #btn{
+    margin-right: 1.8rem;
+}
+
+.select-car .items__subsection p:not(:last-child){
+    margin-bottom: .5rem;
+}
+
+/* Блок 4 */
+.start-work{
+    background: var(--bg-first);
+}
+
+.start-work .wrapper{
+    padding: 10rem 0;
+    display: block;
+}
+
+.start-work h2{
+    margin-bottom: 3rem;
+}
+
+.start-work .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem 2rem;
+}
+
+.start-work .container .object h4{
+    margin-bottom: 1.5rem;
+}
+
+.start-work .container .object span{
+    padding: .5rem 0;
+    background: var(--ff-color-yellow);
+}
+
+.start-work .container .object a{
+    font-family: var(--ff-bold);
+    text-decoration: underline;
+}
+
+.start-work .container .object a:hover{
+    color: var(--ff-color-red);
+}
+
+
+/* Блок 5 */
+.advantages{
+    background: var(--bg-third);
+    color: var(--ff-color-white);
+}
+
+.advantages .left-container{
+    padding: 4rem 0;
+}
+
+.advantages .left-container h2{
+    margin-bottom: 4.5rem;
+}
+
+.advantages .object{
+    margin-left: 4rem;
+    width: 20rem;
+    position: relative;
+}
+
+.advantages .object:not(:last-child){
+    margin-bottom: 3.5rem;
+}
+
+.advantages .object img{
+    position: absolute;
+    left: -3rem;
+}
+
+.advantages .object h4{
+    margin-bottom: .6rem;
+}
+
+.advantages .object p{
+    line-height: 1.5;
+}
+
+/* Блок 6 */
+.mobile-app{
+    background: var(--bg-second);
+}
+
+.mobile-app .wrapper{
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+.mobile-app .left-container{
+    padding: 4.5rem 0;
+}
+
+.mobile-app .left-container h2{
+    margin-bottom: 2rem;
+}
+
+.mobile-app .left-container p{
+    margin-bottom: 3rem;
+    width: 23rem;
+    line-height: 1.5;
+}
+
+.mobile-app .right-container{
+    background: url(../images/mobile-app/r-c-mobile.png) center/cover;
+    position: relative;
+}
+
+.mobile-app .right-container img:first-child{
+    object-fit: initial;
+    position: absolute;
+    top: -10%;
+    left: 20%;
+    width: auto;
+    height: 120%;
+}
+
+.mobile-app .right-container img:last-child{
+    object-fit: initial;
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    width: auto;
+    height: 80%;
+}
+
+
+/* Блок 7 */
+.contacts{
+    padding: 8rem 0 10rem 0;
+    background: var(--bg-first);
+}
+
+.contacts .wrapper{
+    display: block;
+}
+
+.contacts h2{
+    margin-bottom: 4rem;
+}
+
+.contacts .object{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem 0;
+}
+
+.contacts .object:not(:last-child){
+    margin-bottom: 2rem;
+}
+
+.contacts .object li{
+    display: flex;
+    align-items: center;
+}
+
+.contacts .object span{
+    margin-right: .3rem;
+    color: var(--ff-color-grey);
+}
+
+.contacts .object .object__images{
+    display: flex;
+    align-items: center;
+}
+
+.contacts .object img{
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.contacts .object .object__sublist{
+    display: flex;
+}
+
+.object__sublist li:last-child{
+    margin-top: .5rem;
+    color: var(--ff-color-grey);
+    text-decoration: underline;
+}
+
+
+/* Блок 8 */
+.application{
+    background: var(--bg-second);
+}
+
+.application .left-container{
+    padding: 4rem 0 3.5rem 0;
+}
+
+.application h2{
+    margin-bottom: 4.5rem;
+}
+
+.application .object p{
+    margin-bottom: .5rem;
+}
+
+.application .object input[type="text"],
+.application .object input[type="tel"]{
+    padding: .8rem;
+    width: 30vw;
+    border: .3px solid #898989;
+    border-radius: 3px;
+}
+
+.application .object:nth-of-type(1){
+    margin-bottom: 1rem;
+}
+
+.application .object:nth-of-type(2){
+    margin-bottom: 2.5rem;
+}
+
+.application .object__submit p{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.application .object__submit #btn{
+    margin-right: 2rem;
+    padding: 1rem 3vw;
+    border: 0;
+    outline: 0;
+}
+
+.application .object__submit p{
+    font-size: .8rem;
+    color: var(--ff-color-grey);
+}
+
+.application .object__submit a{
+    font-size: .8rem;
+    color: var(--ff-color-grey);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.application .object__submit a:hover{
+    color: var(--ff-color-black);
+}
+
+
+/* Блок 9 */
+.car{
+    padding: 3rem 0;
+    background: var(--ff-color-yellow);
+    text-align: center;
+}
+
+.car span{
+    margin-left: 1rem;
+    font-weight: normal;
+}
+
+.car span:hover{
+    color: var(--ff-color-red);
+}
+
+.car img{
+    margin-left: 1rem;
+}
+
+
+/* Блок 10 */
+footer{
+    background: var(--bg-third);
+}
+
+footer a{
+    color: var(--ff-color-white);
+}
+
+footer a:hover{
+    color: var(--ff-color-red);
+}
+
+footer .wrapper{
+    padding: 2rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__info a{
+    display: block;
+}
+
+.footer__info a:first-child{
+    margin-bottom: .5rem;
+}
+
+.footer__menu{
+    text-align: center;
+}
+
+.footer__menu a{
+    color: var(--ff-color-grey);
+}
+
+.footer__menu a:hover{
+    color: var(--ff-color-white);
+}
+
+.footer__menu li{
+    display: inline-block;
+    height: 1.5rem;
+}
+
+.footer__menu li:not(:last-child){
+    margin-right: 1rem;
+}

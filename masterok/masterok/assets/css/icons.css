@@ -1,0 +1,32 @@
+/* -- ICONS -- */
+.icon-search {
+    background-image: url(../img/icons/search.svg);
+}
+
+.icon-profile {
+    background-image: url(../img/icons/profile.svg);
+}
+
+.icon-exit {
+    background-image: url(../img/icons/exit.svg);
+}
+
+.icon-clear {
+    background-image: url(../img/icons/clear.svg);
+}
+
+.icon-back {
+    background-image: url(../img/icons/back.svg);
+}
+
+.icon-register {
+    background-image: url(../img/icons/register.svg);
+}
+
+.icon-login {
+    background-image: url(../img/icons/login.svg);
+}
+
+.icon-add-product {
+    background-image: url(../img/icons/add-product.svg);
+}

@@ -1,0 +1,154 @@
+/* MAIN */
+main {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+
+/* HEADER */
+.header {
+    position: static;
+    background: #3E2856;
+}
+
+header a {
+    color: #fff;
+}
+
+.middle .list-item:hover {
+    transition: .3s;
+    border-bottom: 1px solid #fff;
+}
+
+.list-sublist {
+    margin-top: 2rem;
+}
+
+.item-link.button {
+    background: #F1E4FF;
+    color: #3E2856;
+}
+
+
+/* PROFILE */
+.profile.pd {
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.profile .title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+/* PROFILE LINKS */
+.profile-links {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-btn {
+    padding: 0.625rem 2rem;
+    background: #F1E4FF;
+    color: #3E2856;
+    width: 200px;
+    text-align: center;
+}
+
+.profile-btn.active {
+    background: #3E2856;
+    color: #F1E4FF;
+}
+
+.profile-adds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.profile .title {
+    font-size: 2rem;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-label {
+    align-self: flex-start;
+}
+
+.info-input {
+    margin: 0.5rem 0;
+    min-width: 350px;
+    padding: 0.625rem 2rem;
+    border-radius: 8px;
+    border: 1px solid #000;
+}
+
+
+/* PROFILE TABLE */
+.profile-content.table {
+    display: block;
+    padding-bottom: 3px;
+    overflow-x: scroll;
+}
+
+.profile-table {
+    border-spacing: 3px;
+}
+
+.title-item {
+    padding: 0.625rem 2rem;
+    background: #3E2856;
+    color: #F1E4FF;
+    border-radius: 8px;
+}
+
+.decscription-item {
+    padding: 0.625rem 2rem;
+    background: #F1E4FF;
+    color: #3E2856;
+    border-radius: 8px;
+}
+
+.decscription-item a{
+    color: inherit;
+}
+
+/* PROFILE EDIT */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 850px) {
+    .profile .profile-adds {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
+    #profile-form-two,
+    #profile-form-three {
+        grid-row: auto;
+    }
+}

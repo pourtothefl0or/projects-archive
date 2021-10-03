@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+
+/* HERO */
+.hero {
+    background-image: url(../images/hero/hero.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero .center {
+    height: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-decription {
+    margin-bottom: calc(2rem + 0.625rem);
+    font-size: 1.2rem;
+    max-width: 550px;
+}
+
+.hero-content .button {
+    padding: 1.2rem 2rem;
+}
+
+
+/* ADVANTAGES */
+.advantages-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* repeat(auto-fill, minmax(300px, 1fr)) */
+    gap: 1rem;
+    justify-items: center;
+}
+
+.advantages-card {
+    display: inline-flex;
+    align-items: center;
+}
+
+.advantages-line {
+    margin-right: 1rem;
+    width: 1px;
+    height: 4rem;
+    background: #9B51E0;
+}
+
+
+/* MAIL */
+.mail.pd {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.mail .center {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.mail-content {
+    padding: 1rem 1rem 3rem 1rem;
+    width: 80vw;
+    background: url(../images/mail/bg.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mail .title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.mail-input {
+    margin-right: -2px;
+    width: 300px;
+    padding: 1.2rem 2rem;
+    border: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+.mail-button {
+    margin-left: -2px;
+    width: 200px;
+    padding: 1.2rem 2rem;
+    border: 0;
+    background: #3E2856;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+.mail-button:hover {
+    transition: .3s;
+    opacity: 0.8;
+
+}
+
+
+/* FOOTER */
+.footer {
+    margin-top: auto;
+    background: #3E2856;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-logo :not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.footer .footer-logo {
+    color: #fff;
+}
