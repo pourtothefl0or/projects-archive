@@ -10,11 +10,18 @@ document.querySelector('.faq-accordion').addEventListener('click', (event) => {
 
 // === BURGER MENU === 
 const header = document.querySelector('.section-header');
+const navLink = document.querySelectorAll('.nav__link');
 const body = document.querySelector('body');
 
 document.querySelector('.btn-burger').addEventListener('click', () => {
     header.classList.toggle('section-header--active-nav');
     body.style.overflowY = (body.style.overflowY == 'hidden') ? '' : 'hidden';
+
+    navLink.forEach((e) => {
+        e.addEventListener('click', () => {
+            resetNav();
+        });
+    });
 })
 
 const resetNav = () => {
